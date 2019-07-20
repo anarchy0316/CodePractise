@@ -1,4 +1,5 @@
 git reset --hard HEAD^ (回退到上一版本)
 git reset --hard id号 (回退某一版本)
-git checkout  -- <file> (删除某文件的临时修改))
-git checkout . (删除所有文件的临时修改)
+git checkout  -- <file> (删除某文件的工作区修改))
+git checkout . (删除所有文件的临时工作区修改)
+git reset HEAD <file> (将某文件的暂存区提交 回撤到工作区)
