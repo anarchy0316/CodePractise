@@ -1,0 +1,2 @@
+git reset --hard HEAD^ (回退到上一版本)
+git reset --hard id号 (回退某一版本)
