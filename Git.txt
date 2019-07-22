@@ -21,6 +21,9 @@ git branch -d <Branch Name>  删除指定分支
 
 
 //----------------------------------------------------解决分支冲突
+merge 时报出冲突后解决
+git log --graph --pretty=oneline --abbrev-commit 
+
 
 
 
