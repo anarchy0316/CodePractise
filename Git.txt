@@ -41,4 +41,25 @@ git push origin master
 git push origin dev
 推送你需要推送的分支，其他分支可以放在本地
 
+//----------------------------------------------------多人协作
+远程仓库默认是 origin
+查看远程库信息 git remote
+或者用 git remote -v 显示更详细的信息
 
+当他人从远程库clone时 默认情况下，只能看到本地master分支，如果想要在dev上开发，必须创建远程origin的dev分支到本地
+git checkout -b dev origin/dev 
+
+修改提交后，它就可以用 
+git push origin dev
+来push到远程
+
+如果说不巧两人对同一文件做了修改，我push时提示有冲突，那么我先用 git pull 把最新的提交从 origin/dev 拉取，然后于本地合并解决冲突，再推送
+
+git pull
+
+如果git pull 也失败了，原因是本地  dev  分支没有和远程  origin/dev  分支建立链接
+git branch --set-upstream-to=origin/dev dev
+git branch --set-upstream-to <branch-name> origin/<branch-name>
+
+再 git pull
+然后动手解决冲突 提交 上传
