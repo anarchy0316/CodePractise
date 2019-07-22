@@ -28,6 +28,9 @@ git log --graph --pretty=oneline --abbrev-commit
 git merge --no-ff -m "merge with no-ff" <BracnhName> 通过这个命令来关闭 Fast Forward  强迫在merge时输入commentzd gitlog 中留下记录
 而且看起来 "--no-ff" 这个命令只要输入一次后后面都会强制执行
 
-
-
-
+//----------------------------------------------------Stash
+git stash 将工作暂存，可以调用多次
+git stash list  查看stash list
+git stash pop  返回该stash并 stash list中的副本
+git stash apply    git stash drop 相当于 git stash pop
+git stash apply stash@{0} 当有多个stash 时指定回到哪一个
