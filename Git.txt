@@ -10,3 +10,13 @@ git remote add origin git@github.com:anarchy0316/CodePractise.git（关联远程
 git push -u origin master (第一次要加上 -u 参数)
 
 以后用 git push origin matser 就行
+
+
+git checkout -b dev 创建分支并切换
+等于 git branch dev 
++   git checkout dev
+
+git branch 查看当前分支，会列出所有分支，然后在当前分支前加*号
+
+
+
