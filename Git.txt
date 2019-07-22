@@ -11,12 +11,14 @@ git push -u origin master (第一次要加上 -u 参数)
 
 以后用 git push origin matser 就行
 
-
-git checkout -b dev 创建分支并切换
-等于 git branch dev 
-+   git checkout dev
-
+//----------------------------------------------------Branch
+git checkout -b <Branch Name>  创建分支并切换
+等于 git branch <Branch Name>  
++   git checkout <Branch Name> 
 git branch 查看当前分支，会列出所有分支，然后在当前分支前加*号
-
 git merge <Branch Name>  将指定分支合并至当前分支
+git branch -d <Branch Name>  删除指定分支
+
+//----------------------------------------------------解决分支冲突
+
 
