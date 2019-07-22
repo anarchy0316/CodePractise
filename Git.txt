@@ -3,3 +3,10 @@ git reset --hard id号 (回退某一版本)
 git checkout  -- <file> (删除某文件的工作区修改))
 git checkout . (删除所有文件的临时工作区修改)
 git reset HEAD <file> (将某文件的暂存区提交 回撤到工作区)
+
+git remote add origin git@server-name:path/repo-name.git
+git remote add origin git@github.com:anarchy0316/CodePractise.git（关联远程库）
+
+git push -u origin master (第一次要加上 -u 参数)
+
+以后用 git push origin matser 就行
