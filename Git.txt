@@ -29,5 +29,5 @@ git merge --no-ff -m "merge with no-ff" <BracnhName> 通过这个命令来关闭
 而且看起来 "--no-ff" 这个命令只要输入一次后后面都会强制执行
 
 
-
+修复Bug101
 
