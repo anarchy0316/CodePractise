@@ -34,3 +34,5 @@ git stash list  查看stash list
 git stash pop  返回该stash并 stash list中的副本
 git stash apply    git stash drop 相当于 git stash pop
 git stash apply stash@{0} 当有多个stash 时指定回到哪一个
+
+再测试
