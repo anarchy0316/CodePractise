@@ -18,5 +18,5 @@ git checkout -b dev 创建分支并切换
 
 git branch 查看当前分支，会列出所有分支，然后在当前分支前加*号
 
-
+git merge <Branch Name>  将指定分支合并至当前分支
 
