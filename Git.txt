@@ -18,7 +18,7 @@ git checkout -b <Branch Name>  创建分支并切换
 git branch 查看当前分支，会列出所有分支，然后在当前分支前加*号
 git merge <Branch Name>  将指定分支合并至当前分支
 git branch -d <Branch Name>  删除指定分支
-
+git branch -D <Branch Name>  可以在分支上有未合并的提交时强行删除分支(要求大写D防止出错)
 
 //----------------------------------------------------解决分支冲突
 merge 时报出冲突后解决
