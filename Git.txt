@@ -34,3 +34,13 @@ git stash list  查看stash list
 git stash pop  返回该stash并 stash list中的副本
 git stash apply    git stash drop 相当于 git stash pop
 git stash apply stash@{0} 当有多个stash 时指定回到哪一个
+
+
+//----------------------------------------------------远程工作
+git push origin master
+git push origin dev
+推送你需要推送的分支，其他分支可以放在本地
+
+分身试图推送,主身也做了一些修改
+
+
