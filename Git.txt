@@ -41,6 +41,4 @@ git push origin master
 git push origin dev
 推送你需要推送的分支，其他分支可以放在本地
 
-分身试图推送,主身也做了一些修改
-
 
