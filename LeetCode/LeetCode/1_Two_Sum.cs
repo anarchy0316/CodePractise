@@ -20,7 +20,7 @@ namespace LeetCode.LeetCode
      */
 
 
-    public class Two_Sum_1
+    public class Two_Sum
     {
         /// <summary>
         /// 哈希映射

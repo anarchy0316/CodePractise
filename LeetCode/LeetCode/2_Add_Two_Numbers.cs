@@ -27,7 +27,7 @@ namespace LeetCode.LeetCode
         public ListNode(int x) { val = x; }
     }
 
-    public class Add_Two_Numbers_2
+    public class Add_Two_Numbers
     {
         public ListNode AddTwoNumbers(ListNode l1, ListNode l2)
         {
