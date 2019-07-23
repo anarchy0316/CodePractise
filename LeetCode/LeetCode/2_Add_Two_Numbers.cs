@@ -32,19 +32,21 @@ namespace LeetCode.LeetCode
         public ListNode AddTwoNumbers(ListNode l1, ListNode l2)
         {
             bool HasCarryBit = false;
-            ListNode result = new ListNode(0);
+            ListNode result = null;
+            ListNode Father = null;
 
-            ListNode passNode = result;
-            while (l1 != null || l2 != null)
+            while (l1 != null || l2 != null || HasCarryBit)
             {
                 int num = 0;
                 if (l1 != null)
                 {
                     num += l1.val;
+                    l1 = l1.next;
                 }
                 if (l2 != null)
                 {
                     num += l2.val;
+                    l2 = l2.next;
                 }
                 if (HasCarryBit)
                 {
@@ -53,17 +55,21 @@ namespace LeetCode.LeetCode
                 }
                 if (num > 9)
                 {
-                    num %= 10;
+                    num -= 10;
                     HasCarryBit = true;
                 }
-                if (l1 != null || l1.next != null)
+                if (Father == null)
                 {
-                    l1 = l1.next;
+
+                    Father = new ListNode(num);
+                    result = Father;
                 }
-                if (l2 != null || l2.next != null)
+                else
                 {
-                    l2 = l2.next;
+                    Father.next = new ListNode(num);
+                    Father = Father.next;
                 }
+                Console.WriteLine(num);
             }
             return result;
         }
