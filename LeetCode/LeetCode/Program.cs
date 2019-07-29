@@ -10,8 +10,8 @@ namespace LeetCode.LeetCode
     {
         static void Main(string[] args)
         {
-            _4_Median_of_Two_Sorted_Arrays a = new _4_Median_of_Two_Sorted_Arrays();
-            a.FindMedianSortedArrays(new int[] { 1, 3 }, new int[] { 2 });
+            _5_Longest_Palindromic_Substring a = new _5_Longest_Palindromic_Substring();
+            a.LongestPalindrome("cbbd");
         }
     }
 }
