@@ -10,8 +10,8 @@ namespace LeetCode.LeetCode
     {
         static void Main(string[] args)
         {
-            _5_Longest_Palindromic_Substring a = new _5_Longest_Palindromic_Substring();
-            a.LongestPalindrome("cbbd");
+            _6_zigzag_conversion a = new _6_zigzag_conversion();
+            Console.WriteLine(a.Convert2("PAYPALISHIRING", 3));
         }
     }
 }
