@@ -21,10 +21,16 @@ namespace LeetCode.LeetCode
         链接：https://leetcode-cn.com/problems/median-of-two-sorted-arrays   
         著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
         */
+        void AddMinMax(ref int[] num)
+        {
+            num = (new int[] { int.MinValue }.Concat(num).Concat(new int[] { int.MaxValue })).ToArray();
+        }
         public double FindMedianSortedArrays(int[] nums1, int[] nums2)
         {
-            var DoubleCut1 = nums1.Length;
-            var DoubleCut2 = nums2.Length;
+            AddMinMax(ref nums1);
+            AddMinMax(ref nums2);
+            var DoubleCut1 = nums1.Length - 1;
+            var DoubleCut2 = nums2.Length - 1;
             Tuple<int, int> L_R_1;
             Tuple<int, int> L_R_2;
             L_R_1 = GetLMax_Rmin(nums1, DoubleCut1);
@@ -47,6 +53,7 @@ namespace LeetCode.LeetCode
                     if (DoubleCut1 - Limit_L_1 < Limit_R_2 - DoubleCut2)//cut1 左移
                     {
                         DoubleCut1 = (DoubleCut1 + Limit_L_1) / 2;
+
                         DoubleCut2 = DoubleCut2 + (Limit_R_1 - DoubleCut1);// L1 cut 左移动多少 l2 cut就右移多少
                     }
                     else                                                //cut2 右移
@@ -75,17 +82,8 @@ namespace LeetCode.LeetCode
                 }
                 L_R_1 = GetLMax_Rmin(nums1, DoubleCut1);
                 L_R_2 = GetLMax_Rmin(nums2, DoubleCut2);
+
             }
-
-
-
-
-
-
-
-
-
-
 
             bool Cut1_Is_Even = DoubleCut1 % 2 == 0;
             bool Cut2_Is_Even = DoubleCut2 % 2 == 0;
@@ -112,9 +110,8 @@ namespace LeetCode.LeetCode
                 temp.Sort();
                 return (temp[1] + temp[2]) / 2.0f;
             }
+            return 0;
         }
-
-
         public Tuple<int, int> GetLMax_Rmin(int[] num, int DoubleCut)
         {
             if (DoubleCut % 2 == 0)

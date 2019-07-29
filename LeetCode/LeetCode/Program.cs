@@ -10,20 +10,8 @@ namespace LeetCode.LeetCode
     {
         static void Main(string[] args)
         {
-            Add_Two_Numbers a = new Add_Two_Numbers();
-            var n1 = new ListNode(2);
-            var n2 = new ListNode(4);
-            var n3 = new ListNode(3);
-            n1.next = n2;
-            n2.next = n3;
-
-
-            var c = a.AddTwoNumbers(n1, n1);
-            while (c != null)
-            {
-
-                c = c.next;
-            }
+            _4_Median_of_Two_Sorted_Arrays a = new _4_Median_of_Two_Sorted_Arrays();
+            a.FindMedianSortedArrays(new int[] { 1, 3 }, new int[] { 2 });
         }
     }
 }
