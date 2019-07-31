@@ -10,8 +10,8 @@ namespace LeetCode.LeetCode
     {
         static void Main(string[] args)
         {
-            _6_zigzag_conversion a = new _6_zigzag_conversion();
-            Console.WriteLine(a.Convert2("PAYPALISHIRING", 3));
+            _8_String_to_Integer_atoi a = new _8_String_to_Integer_atoi();
+            Console.WriteLine(a.MyAtoi("42"));
         }
     }
 }
