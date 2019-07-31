@@ -10,8 +10,8 @@ namespace LeetCode.LeetCode
     {
         static void Main(string[] args)
         {
-            _8_String_to_Integer_atoi a = new _8_String_to_Integer_atoi();
-            Console.WriteLine(a.MyAtoi("42"));
+            _9_Palindrome_Number a = new _9_Palindrome_Number();
+            Console.WriteLine(a.IsPalindrome(1231));
         }
     }
 }

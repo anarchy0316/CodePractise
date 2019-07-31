@@ -50,6 +50,7 @@
     <Compile Include="LeetCode\6_zigzag_conversion.cs" />
     <Compile Include="LeetCode\7_Reverse_Integer.cs" />
     <Compile Include="LeetCode\8_String_to_Integer_atoi.cs" />
+    <Compile Include="LeetCode\9_Palindrome_Number.cs" />
     <Compile Include="LeetCode\Program.cs" />
     <Compile Include="LeetCode\1_Two_Sum.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
