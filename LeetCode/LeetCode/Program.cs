@@ -10,12 +10,9 @@ namespace LeetCode.LeetCode
     {
         static void Main(string[] args)
         {
-            //_9_Palindrome_Number a = new _9_Palindrome_Number();
-            //Console.WriteLine(a.IsPalindrome(1231));
-            foreach (var item in "sss")
-            {
-                Console.WriteLine(item);
-            }
+            _10_Regular_Expression_Matching a = new _10_Regular_Expression_Matching();
+            a.isMatch("aaa", "a*a");
+
         }
     }
 }
