@@ -73,33 +73,6 @@ namespace LeetCode.LeetCode
                 {
                     if (p[j - 1] == '*')
                     {
-                        {
-                            //var a1 = memory[i, j - 2];
-
-                            //if (a1)
-                            //{
-                            //    Console.WriteLine("因为 s: " + s.Substring(0, i) + "  p:" + p.Substring(0, j - 2) + " 成立，等于整个 x* 被忽略后" +
-                            //       " s: " + s.Substring(0, i) +
-                            //       " p: " + p.Substring(0, j) +
-                            //        "也成立");
-                            //}
-
-                            //var a2 = (i > 0 && (s[i - 1] == p[j - 2] || p[j - 2] == '.') && memory[i - 1, j]);
-                            //if (a2)
-                            //{
-
-                            //    Console.Write("因为 s: " + s.Substring(0, i - 1) + " p: " + p.Substring(0, j - 2) + " 成立, 往后推进");
-                            //    if (s[i - 1] == p[j - 2])
-                            //    {
-                            //        Console.Write("s: " + s.Substring(0, i) + " p: " + p.Substring(0, j) + "使得 * 仍在继续");
-                            //    }
-                            //    if (p[j - 2] == '.')
-                            //    {
-                            //        Console.Write("s: " + s.Substring(0, i) + " p: " + p.Substring(0, j) + "使得 .* 仍在继续");
-                            //    }
-                            //    Console.WriteLine("  继续成立");
-                            //}
-                        }
                         memory[i, j] =
                             memory[i, j - 2]
                             ||
@@ -111,11 +84,6 @@ namespace LeetCode.LeetCode
                             i > 0
                             && (s[i - 1] == p[j - 1] || p[j - 1] == '.')
                             && memory[i - 1, j - 1];
-                        if (memory[i, j])
-                        {
-                            Console.Write(string.Format(" 因为 s: {0},p: {1} 成立", s.Substring(0, i - 1), p.Substring(0, j - 1)));
-                            Console.WriteLine("且 s:" + s[i - 1] + " p:" + p[j - 1] + "  相同，所以成立");
-                        }
                     }
                 }
             }
