@@ -29,7 +29,6 @@ namespace LeetCode.LeetCode
                 { 4,"IV"},
                 { 1,"I"},
             };
-            Lookup.Reverse();
             StringBuilder result = new StringBuilder();
             while (num != 0)
             {

@@ -10,8 +10,8 @@ namespace LeetCode.LeetCode
     {
         static void Main(string[] args)
         {
-            _0012_IntegerToRoman a = new _0012_IntegerToRoman();
-            Console.WriteLine(a.IntToRoman(3123));
+            _0013_RomanToInt a = new _0013_RomanToInt();
+            Console.WriteLine(a.RomanToInt("IV"));
 
         }
     }
