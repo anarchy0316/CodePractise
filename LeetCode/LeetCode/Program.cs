@@ -10,8 +10,8 @@ namespace LeetCode.LeetCode
     {
         static void Main(string[] args)
         {
-            _10_Regular_Expression_Matching a = new _10_Regular_Expression_Matching();
-            a.isMatch("aaa", "a*a");
+            _0011_ContainerWithMostWater a = new _0011_ContainerWithMostWater();
+            a.MaxArea(new int[] { 2, 3, 4, 5, 18, 17, 6 });
 
         }
     }
