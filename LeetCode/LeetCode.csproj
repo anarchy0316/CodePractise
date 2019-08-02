@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="LeetCode\0010_Regular_Expression_Matching.cs" />
     <Compile Include="LeetCode\0011_ContainerWithMostWater.cs" />
+    <Compile Include="LeetCode\0012_IntegerToRoman.cs" />
     <Compile Include="LeetCode\0322_coin_change.cs" />
     <Compile Include="LeetCode\0003_longest_substring_without_repeating_characters.cs" />
     <Compile Include="LeetCode\0002_Add_Two_Numbers.cs" />
