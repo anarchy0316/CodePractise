@@ -10,9 +10,15 @@ namespace LeetCode.LeetCode
     {
         static void Main(string[] args)
         {
-            _0013_RomanToInt a = new _0013_RomanToInt();
-            Console.WriteLine(a.RomanToInt("IV"));
-
+            _0015_3Sum a = new _0015_3Sum();
+            foreach (var item in a.ThreeSum(new int[] { 0, -4, -1, -4, -2, -3, 2 }))
+            {
+                foreach (var s in item)
+                {
+                    Console.Write(s + " ");
+                }
+                Console.WriteLine();
+            }
         }
     }
 }
