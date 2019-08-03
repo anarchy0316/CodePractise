@@ -50,6 +50,7 @@
     <Compile Include="LeetCode\0014_LongestCommonPrefix.cs" />
     <Compile Include="LeetCode\0015_3Sum.cs" />
     <Compile Include="LeetCode\0017_LetterCombinationsOfAPhoneNumber.cs" />
+    <Compile Include="LeetCode\0018_4Sum.cs" />
     <Compile Include="LeetCode\0322_coin_change.cs" />
     <Compile Include="LeetCode\0003_longest_substring_without_repeating_characters.cs" />
     <Compile Include="LeetCode\0002_Add_Two_Numbers.cs" />

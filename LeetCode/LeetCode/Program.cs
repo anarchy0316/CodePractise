@@ -10,15 +10,9 @@ namespace LeetCode.LeetCode
     {
         static void Main(string[] args)
         {
-            _0015_3Sum a = new _0015_3Sum();
-            foreach (var item in a.ThreeSum(new int[] { 0, -4, -1, -4, -2, -3, 2 }))
-            {
-                foreach (var s in item)
-                {
-                    Console.Write(s + " ");
-                }
-                Console.WriteLine();
-            }
+            _0018_4Sum a = new _0018_4Sum();
+
+            a.FourSum(new int[] { -1, -5, -5, -3, 2, 5, 0, 4 }, -7);
         }
     }
 }
