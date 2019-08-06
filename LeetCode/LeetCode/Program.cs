@@ -10,8 +10,13 @@ namespace LeetCode.LeetCode
     {
         static void Main(string[] args)
         {
-            _0020_Valid_Parentheses a = new _0020_Valid_Parentheses();
-            Console.WriteLine(a.IsValid("()"));
+            _0022_Generate_Parentheses a = new _0022_Generate_Parentheses();
+            foreach (var item in a.GenerateParenthesis(4))
+            {
+                Console.WriteLine(item);
+
+            }
+
         }
     }
 }
