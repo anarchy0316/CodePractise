@@ -49,6 +49,7 @@
     <Compile Include="LeetCode\0013_RomanToInt.cs" />
     <Compile Include="LeetCode\0014_LongestCommonPrefix.cs" />
     <Compile Include="LeetCode\0015_3Sum.cs" />
+    <Compile Include="LeetCode\0016_3sum_Closest.cs" />
     <Compile Include="LeetCode\0017_LetterCombinationsOfAPhoneNumber.cs" />
     <Compile Include="LeetCode\0018_4Sum.cs" />
     <Compile Include="LeetCode\0019_Remove_Nth_Node_From_End_of_List.cs" />
