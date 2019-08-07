@@ -59,6 +59,7 @@
     <Compile Include="LeetCode\0023_Merge_K_Sorted_Linked_Lists_.cs" />
     <Compile Include="LeetCode\0024_Swap_Nodes_in_Pairs.cs" />
     <Compile Include="LeetCode\0025_Reverse_Nodes_In_K_Group.cs" />
+    <Compile Include="LeetCode\0026_Remove_Duplicates_From_Sorted_Array.cs" />
     <Compile Include="LeetCode\0322_coin_change.cs" />
     <Compile Include="LeetCode\0003_longest_substring_without_repeating_characters.cs" />
     <Compile Include="LeetCode\0002_Add_Two_Numbers.cs" />
