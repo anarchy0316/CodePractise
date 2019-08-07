@@ -10,17 +10,8 @@ namespace LeetCode.LeetCode
     {
         static void Main(string[] args)
         {
-            var readin = Console.ReadLine();
-            var strs = readin.Split('-');
-            var result = new StringBuilder();
-            foreach (var str in strs)
-            {
-                result.Append("_");
-                var tp = str.Substring(0, 1).ToUpper() + str.Substring(1);
-                result.Append(tp);
-            }
-            Console.WriteLine(result.ToString().Substring(1));
-            Console.ReadKey();
+            _0027_Remove_Element a = new _0027_Remove_Element();
+            Console.WriteLine(a.RemoveElement(new int[] { 3, 2, 2, 3 }, 3));
         }
     }
 }
