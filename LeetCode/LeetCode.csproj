@@ -61,6 +61,7 @@
     <Compile Include="LeetCode\0025_Reverse_Nodes_In_K_Group.cs" />
     <Compile Include="LeetCode\0026_Remove_Duplicates_From_Sorted_Array.cs" />
     <Compile Include="LeetCode\0027_Remove_Element.cs" />
+    <Compile Include="LeetCode\0028_Implement_Strstr.cs" />
     <Compile Include="LeetCode\0322_coin_change.cs" />
     <Compile Include="LeetCode\0003_longest_substring_without_repeating_characters.cs" />
     <Compile Include="LeetCode\0002_Add_Two_Numbers.cs" />
