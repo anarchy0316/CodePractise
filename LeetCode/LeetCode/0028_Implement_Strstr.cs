@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace LeetCode.LeetCode
 {
+    //https://leetcode-cn.com/problems/implement-strstr/submissions/
     public class _0028_Implement_Strstr
     {
         public int StrStr(string haystack, string needle)
