@@ -10,13 +10,17 @@ namespace LeetCode.LeetCode
     {
         static void Main(string[] args)
         {
-            _0022_Generate_Parentheses a = new _0022_Generate_Parentheses();
-            foreach (var item in a.GenerateParenthesis(4))
+            var readin = Console.ReadLine();
+            var strs = readin.Split('-');
+            var result = new StringBuilder();
+            foreach (var str in strs)
             {
-                Console.WriteLine(item);
-
+                result.Append("_");
+                var tp = str.Substring(0, 1).ToUpper() + str.Substring(1);
+                result.Append(tp);
             }
-
+            Console.WriteLine(result.ToString().Substring(1));
+            Console.ReadKey();
         }
     }
 }
