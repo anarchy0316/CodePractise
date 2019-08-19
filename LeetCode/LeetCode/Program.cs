@@ -10,8 +10,8 @@ namespace LeetCode.LeetCode
     {
         static void Main(string[] args)
         {
-            _0042_Trapping_Rain_Water a = new _0042_Trapping_Rain_Water();
-            Console.WriteLine(a.Trap(new int[] { 4, 3, 2, 1, 0, 1, 2, 3, 4 }));
+            _0071_Simplify_Path a = new _0071_Simplify_Path();
+            Console.WriteLine(a.SimplifyPath("/."));
         }
     }
 }
