@@ -10,8 +10,8 @@ namespace LeetCode.LeetCode
     {
         static void Main(string[] args)
         {
-            _0029_Divide_Two_Integers a = new _0029_Divide_Two_Integers();
-            Console.WriteLine(a.Divide(1100540749, -1090366779));
+            _0042_Trapping_Rain_Water a = new _0042_Trapping_Rain_Water();
+            Console.WriteLine(a.Trap(new int[] { 4, 3, 2, 1, 0, 1, 2, 3, 4 }));
         }
     }
 }
